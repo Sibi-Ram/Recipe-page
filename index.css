@@ -5,8 +5,165 @@
   margin: 0;
   padding: 0;
 }
+html{
+  font-size: 16px;
+}
 
 body{
+  height: 100vh;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  background-color: #FFFFFF;
+  line-height: 1.5;
+}
+/** Typography */
+h1{
+  font-family: "Young Serif", serif;
+  color: #312E2C;
+  font-weight: 400; 
+  line-height: 1;
+  font-size: 2.25rem;
+
+}
+
+h2{
+  font-family: "Young Serif", serif;
+  color: #854632;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+img{
+  width: 100%;
+}
+
+/* ! Main content */
+.container{
+  border: 5px solid rebeccapurple;
+  
+  margin: 0 auto;
+  padding: 2.5em 2em;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 2em;
+  
+}
 
 
+
+.description{
+ 
+  margin-top: 1.5em;
+}
+.preparation{
+  background-color: #FFF7FB;
+  padding: 1.5em;
+  
+}
+
+.preparation>p{
+  color: #7A284E;
+  font-weight: 600; 
+  line-height: 1;
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+}
+
+.preparation ul{
+  padding-left: 2em;
+  /* border: 3px solid greenyellow;
+   */
+  
+}
+.preparation li{
+  /* border:2px solid #7A284E; */
+  padding-left: 1em;
+  
+  
+}
+
+.preparation li::marker{
+  color:#7A284E ;
+}
+
+.ingredients h2,.instructions h2,.nutrition h2{
+  margin-bottom: 1.5em;
+
+}
+
+/* .ingredients ul,.instructions ol{
+  padding-left: 1.2em;
+} */
+
+
+.recipe-list{
+  padding-left: 1.2em;
+  
+
+}
+
+
+/* .ingredients li,.instructions li{
+  padding-left: 1em;
+}
+
+.ingredients li::marker,.instructions li::marker{
+  color: #854632;
+} */
+
+.recipe-list li{
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.recipe-list li::marker{
+  color: #854632;
+} 
+
+
+.nutrition-table{
+  margin-top: 1.5em;
+  /* border: 2px solid red; */
+  font-size: 1rem;
+  
+}
+
+.nutrition-quantity{
+  color: #854632;
+  font-weight: 700;
+  
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr{
+  /* width: 100%; */
+  border-bottom: 1px solid #E3DDD7;
+  /* background-color: aqua; */
+  
+}
+table td{
+  padding: 0.75em 2em;
+  
+}
+
+hr{
+ 
+  
+  width: 100%;
+  background-color:#E3DDD7;
+  height: 1px;
+}
+footer{
+  text-align: center;
+  margin-top: 1em;
+  
+}
+
+footer a{
+  color: #7A284E;
 }
