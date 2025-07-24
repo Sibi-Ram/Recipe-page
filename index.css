@@ -10,7 +10,7 @@ html{
 }
 
 body{
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
@@ -35,8 +35,10 @@ h2{
   font-weight: 400;
 }
 
-img{
+img {
   width: 100%;
+  /* margin: 0;
+  padding: 0; */
 }
 
 /* ! Main content */
@@ -61,7 +63,6 @@ img{
 .preparation{
   background-color: #FFF7FB;
   padding: 1.5em;
-  
 }
 
 .preparation>p{
@@ -74,12 +75,11 @@ img{
 
 .preparation ul{
   padding-left: 2em;
-  /* border: 3px solid greenyellow;
-   */
+  
   
 }
 .preparation li{
-  /* border:2px solid #7A284E; */
+  
   padding-left: 1em;
   
   
@@ -88,7 +88,9 @@ img{
 .preparation li::marker{
   color:#7A284E ;
 }
-
+.preparation,.ingredients,.instructions,.nutrition{
+   align-self: stretch;
+}
 .ingredients h2,.instructions h2,.nutrition h2{
   margin-bottom: 1.5em;
 
@@ -141,9 +143,9 @@ table{
   border-collapse: collapse;
 }
 table tr{
-  /* width: 100%; */
+  
   border-bottom: 1px solid #E3DDD7;
-  /* background-color: aqua; */
+  
   
 }
 table td{
@@ -153,11 +155,11 @@ table td{
 
 hr{
  
-  
   width: 100%;
   background-color:#E3DDD7;
   height: 1px;
 }
+
 footer{
   text-align: center;
   margin-top: 1em;
@@ -167,3 +169,52 @@ footer{
 footer a{
   color: #7A284E;
 }
+
+
+@media(min-width:37.5em){
+
+  
+
+  .container{
+    background-color: #FFFFFF;
+    width: 80%;
+    padding: 2.5em;
+    /* margin: 2.5em; */
+    /* max-width: 768px; */
+   
+  }
+
+  
+
+  h1{
+    font-size: 2.5rem;
+  }
+  img{
+    margin-bottom: 0.5em;
+  }
+
+  body{
+    background-color: #F3E5D7;
+    /* height: 100%; */
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    /* margin-top: 6em ;
+    margin-bottom: 5em; */
+    padding-top: 8em;
+    padding-bottom: 7em;
+    border: #854632 5px solid;
+  }
+}
+	@media (min-width: 56.25em) {
+     /* 900px */ 
+    
+    .container{
+      max-width: 48em;
+      
+    }
+    
+    }
