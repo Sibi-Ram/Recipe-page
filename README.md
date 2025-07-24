@@ -1,4 +1,4 @@
- # Blog Preview card
+ # Recipe page
 
 ## Table of contents
 
@@ -23,8 +23,8 @@
 
 ### Links
 
-- Source Code: [view on GitHub](https://github.com/Sibi-Ram/Blog-preview-card)
-- Live Site URL: [QR code Component website](https://sibi-ram.github.io/Blog-preview-card/)
+- Source Code: [view on GitHub](https://github.com/Sibi-Ram/Recipe-page)
+- Live Site URL: [Recipe-Page website](https://sibi-ram.github.io/Recipe-page/)
 
 ## My process
 
@@ -34,6 +34,7 @@
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 - Flexbox
+- Mobile-first workflow
 
 ### What I learned
 
@@ -64,12 +65,12 @@ ___For vertical centering with flexbox, the container must have a defined height
 
 ## Author
 
-- Twitter - [SRtheDev](https://www.twitter.com/SRtheDev)
+- Twitter - [SR-theDev](https://www.twitter.com/SRtheDev)
 - Frontend Mentor - [Sibi-Ram](https://www.frontendmentor.io/profile/Sibi-Ram)
 
 
 
 ## Acknowledgments
 
-This is my solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
+This is my solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 

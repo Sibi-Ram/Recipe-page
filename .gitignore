@@ -32,6 +32,7 @@ Temporary Items
 !.vscode/*.code-snippets
 !*.code-workspace
 
+.vscode/
 # Built Visual Studio Code Extensions
 *.vsix
 
