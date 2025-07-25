@@ -186,7 +186,7 @@ footer a {
   /* 900px */
 
   .container {
-    max-width: 46rem;
+    width: 45rem;
   }
   img {
     width: 100%;
