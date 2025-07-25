@@ -30,7 +30,6 @@
 
 ### Built with
 
-
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 - Flexbox
@@ -38,29 +37,72 @@
 
 ### What I learned
 
-Initailly in css I used
-```css
-display: flex;
-align-items: center;
-```
-on the ```<main>``` element, but the box was not vertically centered.
+Inorder to style the Bullets and numbering, I used ```::marker``` pseudo-element,which allows to style the bullet/numbering independently from the list item text:
 
-After googling I found out the reason.
-The reason: I did not set a height on the flex parent (main), so there was no extra vertical space for centering. ___By default, block elements stretch to 100% width but only as much height as their content.___
-
-corrected code:
-
-Set a height (e.g., height: 100vh;) on the flex parent (```<main>```).
 
 ```css
-height: 100vh;
-align-items: center;
+.recipe-list li::marker{
+  color: #854632;
+} 
 ```
-will vertically center the child inside the parent.
+
+**Horizontal Rule - Styling**
+```<hr>``` is rendered using borders, not background property.
+
+using the border-top property, which is the most reliable way to set ```<hr> ```color and thickness across browsers
+
+```css
+hr {
+  border: 4px solid #a00; /* sets both color and thickness */
+}
+```
+- Use border for most cases: when you want standard lines, borders, and custom styles.
+- Use height (with border: none) when you want a thick rectangle-style rule.
+
+**Table - Styling**
+
+- By default, HTML tables use ``` border-collapse: separate``` , which shows double borders between cells if borders are applied.
+- The property ```border-collapse: collapse;``` merges adjacent borders into a single border, creating a cleaner look.
+
+Border value should be mentioned specificaly for table
+
+**Challenge - I faced- took long time to rectify it**
+
+In the container, I have image and other elements consecutively , At mobile width -- 1st element of the container should not contain any padding or margin - occupying the entire width but other element should respect those padding for that challenge-
+    To solve this I used NEGATIVE values for padding and margin and use calc - to add more width for the image adn apply accordingly, or just manually use additional width(not recommended)
+
+
+```css
+/* ! Default styling */
+.container {
+  
+  margin: 0 auto;
+  padding: 2.5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+/* ! Media query */
+@media (max-width: 599px) {
+  .heading > img {
+    margin-left: -2.5em; /* negative margin to offset container padding */
+    margin-right: -2.5em;
+    margin-top: -2.5em;
+    flex: none;
+    width: calc(100% + 5em);/* container padding left + right */
+    
+    /*• The image width is set wider than the container's inner content (100% + 5em) to compensate for container padding on left and right (2.5em + 2.5em).
+    */
+  }
+}
+```
+
 
 **Key Learning:**
 
-___For vertical centering with flexbox, the container must have a defined height.___
+___```::marker``` pseudo-element allows to style the bullet/numbering independently from the list item text.___
 
 
 ## Author

@@ -5,12 +5,10 @@
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 16px;
-}
+
 
 body {
-  /* height: 100vh; */
+ 
   margin: 0 auto;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
@@ -41,8 +39,7 @@ img {
 
 /* ! Main content */
 .container {
-  /* border: 5px solid rebeccapurple; */
-
+  
   margin: 0 auto;
   padding: 2.5em 2em;
   display: flex;
@@ -90,21 +87,13 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* .ingredients ul,.instructions ol{
-  padding-left: 1.2em;
-} */
+
 
 .recipe-list {
   padding-left: 1.2rem;
+  margin-left: 0.5rem;
 }
 
-/* .ingredients li,.instructions li{
-  padding-left: 1em;
-}
-
-.ingredients li::marker,.instructions li::marker{
-  color: #854632;
-} */
 
 .recipe-list li {
   padding-left: 1em;
@@ -117,7 +106,6 @@ img {
 
 .nutrition-table {
   margin-top: 1.5em;
-  /* border: 2px solid red; */
   font-size: 1rem;
 }
 
@@ -138,8 +126,9 @@ table td {
 
 hr {
   width: 100%;
-  background-color: #e3ddd7;
-  height: 1px;
+  border: 1px solid  #e3ddd7;
+  /* background-color: #e3ddd7;
+  height: 1px; */
 }
 
 footer {
@@ -158,22 +147,8 @@ footer a {
     margin-top: -2.5em;
     flex: none;
     width: calc(100% + 5em);
-    /*         
-        position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100vw; full viewport width */
-    /*margin-bottom: 10px;
-    padding-bottom: 10px;
-    max-width: none; */
-    /* flex: none; */
-    /* flex: none; 
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important; /* full available width */
-    /*max-width: 100% !important;
-    /* box-sizing: border-box; */
-    /*if flex property affects size */
+    
+    
   }
 }
 
@@ -186,7 +161,7 @@ footer a {
     align-items: center;
     padding-top: 8em;
     padding-bottom: 7em;
-    /* border: #854632 5px solid; */
+   
   }
 
   .container {
@@ -194,8 +169,7 @@ footer a {
     width: 80%;
     padding: 2.5em;
     border-radius: 1.5em;
-    /* margin: 2.5em; */
-    /* max-width: 768px; */
+    
   }
 
   h1 {
@@ -207,14 +181,16 @@ footer a {
     height: auto;
   }
 }
+
 @media (min-width: 900px) {
   /* 900px */
 
   .container {
-    max-width: 48em;
+    max-width: 46rem;
   }
   img {
     width: 100%;
     height: auto;
   }
 }
+
