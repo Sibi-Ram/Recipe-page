@@ -70,6 +70,7 @@ img {
 }
 .preparation li {
   padding-left: 1em;
+  margin-bottom: 0.5rem;
 }
 
 .preparation li::marker {
@@ -98,6 +99,7 @@ img {
 .recipe-list li {
   padding-left: 1em;
   margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 
 .recipe-list li::marker {
